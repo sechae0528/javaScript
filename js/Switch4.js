@@ -1,22 +1,22 @@
 // JavaScript source code
 function defineNumber() {
-    var number = prompt("숫자를 입력하세요", "");
+    var number = prompt("?�자�??�력?�세??, "");
     number = Number(number)
     switch (number % 2) {
         case 0:
-            alert("짝수입니다");
+            alert("짝수?�니??);
             break;
         case 1:
-            alert("홀수입니다");
+            alert("?�?�입?�다");
             break;
         default:
-            alert("숫자가 아닙니다");
+            alert("?�자가 ?�닙?�다");
             break
     }
 }
 function getNameOfDay() {
 
-    var week = new Array('일', '월', '화', '수', '목', '금', '토');
+    var week = new Array('??, '??, '??, '??, '�?, '�?, '??);
     var today = new Date();
     var year = today.getFullYear();
     var month = today.getMonth() + 1;
@@ -26,26 +26,50 @@ function getNameOfDay() {
 
     switch (nameIndex) {
         case 0:
-            today = "일요일";
+            today = "?�요??;
             break;
         case 1:
-            today = "월요일";
+            today = "?�요??;
             break;
         case 2:
-            today = "화요일";
+            today = "?�요??;
             break;
         case 3:
-            today = "수요일";
+            today = "?�요??;
             break;
         case 4:
-            today = "목요일";
+            today = "목요??;
             break;
         case 5:
-            today = "금요일";
+            today = "금요??;
             break;
         case 6:
-            today = "토요일";
+            today = "?�요??;
             break;
     }
     alert(today)
 }
+
+function conditionDf() {
+    //?�용?�로부???�력??받아 변?�에 ?�??
+    var number1 = prompt('?�자1???�력?�세??, '');
+    var number2 = prompt('?�자2�??�력?�세??, '');
+
+    //?�력받�? 문자?�을 ?�자�?변?�하???�선??
+    number1 = Number(number1);
+    number2 = Number(number2);
+
+    //조건�?
+    if (number1 > number2) {
+        //�?번째 ?�력받�? ?��? ??번째 ?�력받�? ?�보???????�행
+        alert(number1 + ' >' + number2);
+    } else if (number1 == number2) {
+        //�?번째 ?�력받�? ?��? ??번째 ?�력받�? ?��? 같을 ???�행
+        //if??조건??결과가 false?????�행 
+        alert(number1 + ' = ' + number2);
+    } else {
+        //�?번째 ?�력받�? ?��? ??번째 ?�력받�? ?�보???�을 ???�행
+        //if?� ele if??조건??결과가 false?????�행 
+        alert(number1 + ' < ' + number2);
+    }
+ }

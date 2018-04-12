@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\js",
+    "\\webProject\\javaWebProject",
+    "\\webProject\\javaWebProject\\javaWebProject",
+    "\\webProject\\javaWebProject\\javaWebProject\\root",
+    "\\webProject\\javaWebProject\\javaWebProject\\root\\css"
   ],
-  "SelectedNode": "\\HTMLPage1.html",
+  "SelectedNode": "\\webProject",
   "PreviewInSolutionExplorer": false
 }
