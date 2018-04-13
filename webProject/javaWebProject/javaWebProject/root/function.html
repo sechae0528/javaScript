@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="../root/js/function.js"></script>
+    <title></title>
+</head>
+<script >
+    //function add()
+    var out = add(1, 2, 3, 4, 5, 7);
+   alert(out);
+    
+    //가변인자 함수 function parameter()
+    var output = parameter(1);
+    alert(output);
+
+    //내부함수 outerFunction()
+    outerFunction();
+
+    //자기 호출함수
+    name();
+
+    //콜백함수
+    var message = function () {
+        alert('합이 20을 넘었습니다.');
+    }
+    check(message);
+   
+</script>
+<body>
+    
+   
+
+</body>
+</html>
