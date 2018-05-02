@@ -46,9 +46,6 @@ function getNameOfDay() {
         case 6:
             today = "토요일";
             break;
-        default:
-            today = "판단불가";
-            break;
     }
     alert(today)
 }

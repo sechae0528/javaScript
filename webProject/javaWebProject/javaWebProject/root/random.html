@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+         var min = Math.min;
+        alert('가장 작은 값: ' + min(12, 3, 46, 0, 55, 24));
+
+        ///"hello kopo" 문자열을 대문자로 바꿔 alert 창을 활용하여 시현되도록 하세요
+        var a = "hello kopo";
+        alert(a.toUpperCase());
+
+        ///for문을 활용하여 (1,10,3,20,5)에 대한 Array를 생성한 하여 정렬한 후 요소를 내림차순으로 하나씩 
+        //출력하는 alert을 시현하세요(for in문 활용)
+        for (i = 0; i < 5; i++) {
+
+        }
+        var array1 = [1, 10, 2, 20, 5];
+        var out = '';
+        array1.sort(function (a, b) { return (b - a) });
+
+        for (var i in array1) {
+            out += array1[i] + '\n';
+        }
+        alert(out);
+
+
+      
+        //Date객체를 활용하여 현재 시간은 xxx년도 ㅌㅌ시 xx초 입니다 라는 alert창을 시현하세요
+        function showTime() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var hour = now.getHours();
+            var second = now.getSeconds();
+            return "현재시간은 " + year + "년도" + hour + "시" + second + "초 입니다";
+        }
+        alert(showTime());
+
+
+        //배열(홍길동, 이순신, 김유신) 에서 랜덤하게 하나를 선택하는 프로그램을 작성하세요
+        var array2 = new Array('홍길동', '이순신', '김유신');
+
+        document.write(randomItem(array2));
+        alert(randomItem(array2));
+        // 주어진 배열에서 요소 1개를 랜덤하게 골라 반환하는 함수
+        function randomItem(a) {
+            return a[Math.floor(Math.random() * a.length)];
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
