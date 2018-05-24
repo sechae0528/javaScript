@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <script src="./js/Function.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //jQuery 작성
+            // $("*").css("color", "blue");
+            // $("h5").css("color", "yellow");
+            // $("h5,h6").css("color", "green")
+            $("#test").css({"color": "yellow", "background": "green"})
+        });
+    </script>
+</head>
+<body>
+    <h3 id="heading1">좋은 날</h3>
+    <h3 id="heading2">행복한 날</h3>
+    <button onClick="documentControl();">조작 byId</button>
+    <p></p>
+    <input name="check" type="button" value="봄" />
+    <input name="check" type="button" value="여름" />
+    <button onClick="elementbyName();">조작 byName</button>
+    <p></p>
+    <button onClick="querySelec();">조작 querySelector</button>
+    <p></p>
+    <button onClick="controlStyle();">style 조작</button>
+    <p></p>
+    <button onClick="removeObject();">제거하기</button>
+    <p></p>
+
+    <a href="http://www.naver.co.kr/">naver 페이지이동</a>
+    <script>
+/*		window.onload = function(){
+			var heading1 = document.getElementById("heading1");
+			var heading2 = document.getElementById("heading2")
+
+			heading1.innerHTML="Good Day";
+			heading2.style.color = "blue";
+
+		}*/
+
+		function documentControl() {
+			var heading1 = document.getElementById("heading1");
+				var heading2 = document.getElementById("heading2")
+
+
+				heading1.innerHTML="Good Day";
+				heading2.style.color = "blue";
+		}
+
+		function elementbyName() {
+			var check = document.getElementsByName("check");
+			document.write("가져온 문서객체의수:"+check.length);
+		}
+
+		function querySelec() {
+			var heading1 = document.querySelector('#heading1');
+			var heading2 = document.querySelector('#heading2');
+
+			heading1.innerHTML = "Good day";
+			heading2.innerHTML = "Happy day";
+
+		}
+		function controlStyle() {
+			var heading1 = document.getElementById('heading1');
+
+			heading1.style.color = 'blue';
+			heading1.style.border = '3px red';
+			heading1.style['border-style'] = 'dotted';
+
+			document.body.style.backgroundColor = 'green';
+
+		}
+		function removeObject() {
+			var heading1 = document.getElementById('heading1');
+
+			document.body.removeChild(heading1);
+
+		}
+    </script>
+</body>
+</html>
